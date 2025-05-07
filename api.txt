@@ -1,0 +1,63 @@
+API List:
+-----------------------------------------
+POST   /user/user-register
+//POST /user/market-owner-register
+POST   /user/login
+POST   /user/password-reset
+POST   /user/update-profile
+GET    /user:user-id/profile-info
+DELETE /user/delete-profile
+POST   /user/update-user-to-market-owner
+POST   /user/logout
+DELETE /user/delete-market-back-user
+-----------------------------------------
+POST   /market/create-market
+POST   /market/update-market-info
+GET    /market:market-id/market-info
+POST   /market/add-product
+GET    /market:market-id/get-product:product-id
+GET    /market:market-id/get-products
+DELETE /market/delete-product
+POST   /market/update-product-info
+GET    /markets
+GET    /market/:market-id
+POST   /market/rate-market
+-----------------------------------------
+
+-----------------------------------------
+POST   /administrate/update-user-profile
+POST   /administrate/update-market-info
+POST   /administrate/update-product-info
+DELETE /administrate/delete-user
+DELETE /administrate/delete-market
+DELETE /administrate/delete-product
+-------------------------------------------
+
+POST   /manage/notify-user
+POST   /manage/update-user-profile
+POST   /manage/update-market-info
+POST   /manage/update-product-info
+DELETE /manage/delete-user
+DELETE /manage/delete-market
+DELETE /manage/delete-product
+POST   /manage/add-city
+POST   /manage/update-city
+DELETE /manage/delete-city
+POST   /manage/remove-administrator
+POST   /manage/give-administrator
+
+
+
+-------------------------
+Notes
+-------------------------
+add user type in user table
+remove rating from user
+remove communication number 
+POST /product/update-communication-number
+/////////////////////////////////////////////
+GET / --> GET /landing-page?page=4 --> 
+page-number = 10
+select from product table 
+page-number += 10
+/////////////////////////////////////////////
