@@ -11,7 +11,7 @@ const connectDB = async () => {
         });
         console.log("MongoDB connected...");
     } catch (err) {
-        console.log("Thw connection is refused: " + err.message);
+        console.log("The connection is refused: " + err.message);
         process.exit(1);
     }
 }
